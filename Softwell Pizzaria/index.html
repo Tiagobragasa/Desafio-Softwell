@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assistente Virtual</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Chatbot Softwell -->
+    <link rel="stylesheet" href="cbsw/css/cbsw.css">
+</head>
+
+<body style="overflow: hidden;">
+
+	<!-- Chatbot Softwell -->
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "f515e3b0-ccd7-4e41-b69f-d250b82736d1", // The ID of this integration.
+      region: "us-east", // The region your integration is hosted in.
+      serviceInstanceID: "eb1724db-81dd-47e7-8627-b6efef4a0099", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+    <!-- chatbot FIM -->
+
+</body>
+
+</html>
